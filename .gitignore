@@ -1,0 +1,10 @@
+# Direnv/devenv
+.direnv/
+.devenv/
+.envrc
+
+# Nix
+result
+
+# Pre-commit
+.pre-commit-config.yaml
