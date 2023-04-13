@@ -24,7 +24,7 @@ end
 ---@param filepath string the file in question
 ---@return boolean ok whether the file is safe to load
 function M.check(filepath)
-  return M.exists(filepath) and M.owned_by_me(filepath)
+  return M.exists(filepath) and M.is_lua(filepath) and M.owned_by_me(filepath)
 end
 
 local default_opts = {
